@@ -54,24 +54,24 @@ def practice_page():
     
     # Soal-soal Hill Cipher
     soal = [
-      {
-          'id': 1,
-          'pertanyaan': 'Enkripsi teks "CIPHER" menggunakan matriks kunci [[3, 3], [2, 5]]',
-          'kunci': [[3, 3], [2, 5]],
-          'jawaban_benar': 'ESONLP'  
-      },
-      {
-          'id': 2,
-          'pertanyaan': 'Dekripsi teks "RIJVS" menggunakan matriks kunci [[3, 3], [2, 5]]',
-          'kunci': [[3, 3], [2, 5]],
-          'jawaban_benar': 'HELLO'
-      },
-      {
-          'id': 3,
-          'pertanyaan': 'Kunci apa yang digunakan untuk dekripsi jika kunci awal adalah [[3, 3], [2, 5]]?',
-          'kunci': [[3, 3], [2, 5]],
-          'jawaban_benar': '15 17 20 3'
-      }
+        {
+            'id': 1,
+            'pertanyaan': 'Enkripsi teks "CIPHER" menggunakan matriks kunci [[3, 3], [2, 5]]',
+            'kunci': [[3, 3], [2, 5]],
+            'jawaban_benar': 'ESONLP'  
+        },
+        {
+            'id': 2,
+            'pertanyaan': 'Dekripsi teks "RIJVS" menggunakan matriks kunci [[3, 3], [2, 5]]',
+            'kunci': [[3, 3], [2, 5]],
+            'jawaban_benar': 'HELLO'
+        },
+        {
+            'id': 3,
+            'pertanyaan': 'Kunci apa yang digunakan untuk dekripsi jika kunci awal adalah [[3, 3], [2, 5]]?',
+            'kunci': [[3, 3], [2, 5]],
+            'jawaban_benar': '15 17 20 9'
+        }
     ]
 
     
@@ -150,10 +150,6 @@ def introduction_page():
     2. Kalikan matriks invers dengan vektor teks terenkripsi.
     3. Ambil hasil modulus 26 dan konversi kembali ke teks.
     """)
-    
-
-    
-
 
 if __name__ == '__main__':
     main()
