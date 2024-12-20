@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">
+        Proses Dekripsi Hill Cipher
+    </text>
+
+    <!-- Input Text Box -->
+    <rect x="50" y="80" width="150" height="60" rx="5" fill="white" stroke="#333"/>
+    <text x="125" y="110" text-anchor="middle" font-size="16" fill="#333">Ciphertext:</text>
+    <text x="125" y="130" text-anchor="middle" font-size="14" fill="#666">RIJVS</text>
+
+    <!-- Arrow 1 -->
+    <path d="M 200 110 L 280 110" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Inverse Matrix Key Box -->
+    <rect x="290" y="70" width="100" height="80" rx="5" fill="white" stroke="#333"/>
+    <text x="340" y="90" text-anchor="middle" font-size="16" fill="#333">Kunci Invers:</text>
+    <text x="340" y="115" text-anchor="middle" font-size="14" fill="#666">| 4  -3 |</text>
+    <text x="340" y="135" text-anchor="middle" font-size="14" fill="#666">| -1  2 |</text>
+
+    <!-- Multiplication Process -->
+    <rect x="450" y="80" width="200" height="60" rx="5" fill="#e9ecef" stroke="#333"/>
+    <text x="550" y="110" text-anchor="middle" font-size="14" fill="#333">Proses Perkalian Matriks</text>
+    <text x="550" y="130" text-anchor="middle" font-size="12" fill="#666">(mod 26)</text>
+
+    <!-- Arrow 2 -->
+    <path d="M 390 110 L 450 110" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Output Text Box -->
+    <rect x="700" y="80" width="150" height="60" rx="5" fill="white" stroke="#333"/>
+    <text x="775" y="110" text-anchor="middle" font-size="16" fill="#333">Plaintext:</text>
+    <text x="775" y="130" text-anchor="middle" font-size="14" fill="#666">HELLO</text>
+
+    <!-- Arrow 3 -->
+    <path d="M 650 110 L 700 110" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Process Steps -->
+    <text x="100" y="220" font-size="16" fill="#333">Langkah-langkah:</text>
+    
+    <text x="120" y="250" font-size="14" fill="#666">1. Konversi ciphertext ke angka (A=0, B=1, ...)</text>
+    <text x="120" y="280" font-size="14" fill="#666">2. Bagi ciphertext menjadi blok-blok 2x1</text>
+    <text x="120" y="310" font-size="14" fill="#666">3. Hitung invers matriks kunci (mod 26)</text>
+    <text x="120" y="340" font-size="14" fill="#666">4. Kalikan invers matriks dengan blok ciphertext</text>
+    <text x="120" y="370" font-size="14" fill="#666">5. Konversi hasil ke huruf untuk mendapatkan plaintext</text>
+
+    <!-- Arrow Marker Definition -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="#333"/>
+        </marker>
+    </defs>
+</svg>
