@@ -131,7 +131,7 @@ def introduction_page():
     st.image(
     "hill-cipher-encryption.svg",
     caption="Skema Enkripsi Hill Cipher",
-    use_column_width=True
+    use_container_width=True
     )
     st.write("""
     1. Konversi teks menjadi angka (A=0, B=1, ..., Z=25).
@@ -143,7 +143,7 @@ def introduction_page():
     st.image(
         "hill-cipher-decryption.svg",
         caption="Skema Dekripsi Hill Cipher",
-        use_column_width=True
+        use_container_width=True
     )
     st.write("""
     1. Gunakan matriks kunci dan cari invers modularnya (jika ada).
